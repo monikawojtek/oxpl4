@@ -1,92 +1,32 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-  <link rel="stylesheet" href="style.css" />
-  <title>Kółko i krzyżyk</title>
-  <meta charset="utf-8" />
-  <!-- Latest compiled and minified JavaScript -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Kółko i krzyżyk</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-  <body>
-  <div class="row grey header">
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
-  
-  <h1>KÓŁKO I KRZYŻYK</h1>
-  </div>
- 
-  <div class="col-md-4"></div>
-  </div>
-  
-  <div class="row">
-  <form class="form-horizontal">
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Gracz 1</label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="kolko" placeholder="Imię gracza KÓŁKO (red)">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 control-label">Gracz 2</label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="krzyzyk" placeholder="Imię gracza KRZYŻYK (green)">
-    </div>
-  </div>
-  
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-primary">Początek gry</button>
-    </div>
-  </div>
-</form>
-<div class="row">
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
-<table class="table table-bordered blink">
-  <tr><td id='11' class='klik'></td><td id='12' class='klik'></td><td id='13' class='klik'></td></tr>
-  <tr><td id='21' class='klik'></td><td  id='22' class='klik'></td><td id='23' class='klik'></td></tr>
-  <tr><td id='31' class='klik'></td><td id='32' class='klik'></td><td id='33' class='klik'></td></tr>
-</table>
- </div>
- 
-  <div class="col-md-4"></div>
-  </div>
- <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-5" id="gracz1"></div>
-    <div class="col-md-4"></div>
- </div>
-
- <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-5" id="gracz2"></div>
-    <div class="col-md-4"></div>
- </div>
-
- <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-5" id="wynik"></div>
-    <div class="col-md-4"></div>
- </div>
-
- <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-3" id="pytanie"></div>
-    <div class="col-md-5"></div>
- </div>
- 
- <div class="row grey footer">
-  <div class="col-md-3"></div>
-  <div class="col-md-5">
-  
-  <p class="text-center">aklekotka@interia.pl</p>
-  </div>
- 
-  <div class="col-md-4"></div>
-  </div>
-
-  <script src='https://code.jquery.com/jquery-2.1.3.js'></script>
-   <script src='moje_js3.js'></script>
-
-  </body>
-</head>
+<body>
+   <div hidden id="komunikat">
+       <h1 id="tresc">Test</h1>
+       <button id="przycisk">Zagraj jeszcze raz</button>
+   </div>
+    <table id="plansza">
+        <tr>
+            <th x="0" y="0"></th>
+            <th x="1" y="0"></th>
+            <th x="2" y="0"></th>
+        </tr>
+        <tr>
+            <th x="0" y="1"></th>
+            <th x="1" y="1"></th>
+            <th x="2" y="1"></th>
+        </tr>
+        <tr>
+            <th x="0" y="2"></th>
+            <th x="1" y="2"></th>
+            <th x="2" y="2"></th>
+        </tr>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
