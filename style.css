@@ -1,0 +1,55 @@
+table.table{
+	width: 300px;
+	border: 1px solid green;
+}
+
+table.blink{
+	visibility: hidden;
+}
+td{
+	width: 100px;
+	height: 100px
+}
+.red{
+	background-color: red;
+}
+.green{
+	background-color: green;
+}
+
+#gracz1{
+	color: red;
+}
+#gracz2{
+	color: green;
+}
+#pytanie{
+	text-align: right;
+	margin: 20px 0;
+}
+#pytanie p{
+	color: white;
+	background-color: red;
+	border: 1px solid #bbbbbb;
+	border-radius: 3px;
+	/*max-width: 250px;*/
+}
+.grey{
+	background-color: #efefef;
+	color: #555;
+	font-weight: bold;
+}
+.grey p{
+	padding: 10px;
+}
+
+.header{
+	margin-bottom:  30px;
+	border-bottom: 1px solid #ddd;
+}
+
+.footer{
+	margin-top: 30px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
